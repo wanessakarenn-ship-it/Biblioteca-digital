@@ -1,84 +1,29 @@
-Proposta de Sistema de Gerenciamento de Acervo para Biblioteca Escolar
-1. Definição do Projeto
-O objetivo é criar um sistema simples para gerenciar o acervo de livros de uma biblioteca escolar. O foco está em funcionalidades básicas para bibliotecários, como controle de empréstimos e cadastro de livros.
-
-Requisitos Funcionais (RF)
-O que o sistema deve fazer:
-
-Gerenciamento de Acervo: Cadastrar novos livros, listar todo o acervo e buscar livros por título ou autor.
-
-Controle de Empréstimos: Registrar empréstimos e devoluções.
-
-Requisitos Não Funcionais (RNF)
-Como o sistema deve ser:
-
-Usabilidade: Ter uma interface intuitiva e amigável.
-
-Desempenho: Responder rapidamente (em menos de 2 segundos).
-
-Segurança: Exigir autenticação para acesso.
-
-Compatibilidade: Funcionar nos navegadores mais comuns e ser otimizado para dispositivos móveis.
-
-2. Casos de Uso Principais
-Diagrama de Caso de Uso Geral
-Este diagrama mostra a interação entre os usuários e o sistema.
-
-Atores:
-
-Bibliotecário: Gerencia livros, empréstimos e devoluções.
-
-Usuário: Busca livros no acervo.
-
-Casos de Uso:
-
-Gerenciar Livros: Engloba cadastro, listagem, edição e remoção.
-
-Realizar Empréstimo/Devolução: Controla o fluxo de saída e entrada de livros.
-
-Buscar Livros: Permite encontrar livros no acervo.
-
-3. Fluxo de Trabalho (Wireframes)
-Apresentamos protótipos de tela para demonstrar o fluxo de navegação do sistema.
-
-Tela 1: Dashboard (Página Inicial)
-Objetivo: Ponto de partida para todas as ações.
-
-Elementos:
-
-Barra de navegação ("Acervo", "Empréstimos").
-
-Campo de busca centralizado.
-
-Atalhos rápidos ("Cadastrar Novo Livro", "Registrar Empréstimo").
-
-Informações resumidas (total de livros, livros emprestados).
-
-Tela 2: Cadastro de Livro
-Objetivo: Permitir a inclusão de um novo livro no acervo.
-
-Elementos:
-
-Formulário com campos obrigatórios: Título, Autor, Editora, Ano de Publicação, Número de Exemplares e ISBN.
-
-Botões de "Salvar Livro" e "Cancelar".
-
-Mensagens de erro ou sucesso para guiar o bibliotecário.
-
-Tela 3: Listagem de Livros
-Objetivo: Visualizar todo o acervo e realizar buscas.
-
-Elementos:
-
-Barra de busca na parte superior.
-
-Tabela com colunas: "Título", "Autor", "Exemplares Disponíveis".
-
-Funcionalidade de ordenação clicável nos cabeçalhos.
-
-Botões de "Editar" e "Excluir" para cada item da lista.
-
-Paginação para facilitar a navegação em acervos grandes.
-
-4. Conclusão
-Este sistema foi projetado para ser simples, eficiente e fácil de usar, atendendo aos requisitos essenciais de uma biblioteca escolar. A estrutura modular e a interface intuitiva garantem que os bibliotecários possam realizar suas tarefas diárias com agilidade e precisão.
+Plano de Requisitos para o Sistema de Gestão de Acervo da Biblioteca
+Este documento descreve as funcionalidades e qualidades essenciais para a primeira versão do sistema, com base nas definições iniciais do grupo.
+1. Requisitos Funcionais (O que o sistema faz?)
+RF1: Cadastro de Livros
+O sistema deve permitir que um bibliotecário adicione novos livros ao acervo.
+•	Dados necessários: Título, Autor(es), Ano de Publicação, ISBN (opcional), Gênero, e uma contagem de cópias disponíveis.
+RF2: Listagem de Livros
+O sistema deve exibir uma lista completa de todos os livros cadastrados.
+•	Detalhes da lista: A listagem deve incluir o Título, Autor e a disponibilidade de cada livro (total de cópias vs. cópias disponíveis).
+RF3: Busca de Livros
+O sistema deve oferecer uma funcionalidade de busca para localizar livros rapidamente.
+•	Critérios de busca: A busca deve permitir encontrar livros tanto por Título quanto por Autor. A busca deve ser insensível a maiúsculas e minúsculas.
+RF4: Gerenciamento de Empréstimos e Devoluções
+O sistema deve rastrear a circulação de livros.
+•	Fluxo de Empréstimo: Registrar que um livro foi emprestado por um aluno, anotando o nome do aluno e a data do empréstimo.
+•	Fluxo de Devolução: Permitir que o bibliotecário registre a devolução de um livro, atualizando o status de disponibilidade do livro no acervo.
+2. Requisitos Não Funcionais (Como o sistema deve ser?)
+RNF1: Usabilidade e Interface
+A interface do sistema deve ser fácil de usar e visualmente limpa.
+•	Objetivo: Bibliotecários devem ser capazes de realizar as tarefas de forma intuitiva, com mensagens claras de sucesso ou erro.
+RNF2: Compatibilidade de Navegador
+O sistema deve funcionar corretamente em navegadores web modernos, como Chrome, Firefox e Edge.
+•	Objetivo: A interface deve ser responsiva, adaptando-se a diferentes tamanhos de tela (desktop, tablet e celular) para garantir a acessibilidade.
+RNF3: Segurança
+O sistema deve proteger os dados do acervo e restringir o acesso a funções de gerenciamento.
+•	Objetivo: Apenas bibliotecários autorizados devem ter permissão para cadastrar, editar ou registrar empréstimos. Uma forma simples de autenticação será necessária.
+RNF4: Desempenho
+O sistema deve responder às ações do usuário em tempo hábil.
+•	Objetivo: Atrasos não devem exceder 2 segundos em ações comuns como buscar, listar ou cadastrar.
